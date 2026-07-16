@@ -4,3 +4,32 @@ using namespace std;
 int arr[20]; // membuat array dengan panjang data 20
 int n;       // membuat variabel n untuk input panjang array
 
+void input() // membuat prosedur input
+{
+    while (true)
+    {
+        cout << "Masukkan Jumlah Data Pada Array : ";
+        cin >> n;
+
+        if (n <= 20)
+        {
+            break;
+        }
+        else
+        {
+            cout << "\nPanjang Data Maksimal 20" << endl;
+        }
+    }
+
+    cout << endl;
+    cout << "======================" << endl;
+    cout << "Masukkan Element Array" << endl;
+    cout << "======================" << endl;
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << "Masukkan data ke " << i + 1 << " : ";
+        cin >> arr[i];
+    }
+}
+
